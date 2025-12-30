@@ -1,7 +1,21 @@
+"use client";
+
+import Image from "next/image";
+import main from "@/public/main.png";
+import AboutText from "@/src/components/about";
+
 export default function About() {
   return (
-    <>
-      <h1 className="bg-orange-500 min-w-screen min-h-screen">about</h1>
-    </>
+    <section className="bg-white min-w-screen min-h-screen">
+      <div className=" relative">
+        <Image
+          src={main}
+          className="min-w-screen min-h-screen "
+          alt="Picture of the author"
+        />
+
+        <AboutText/>
+      </div>
+    </section>
   );
 }
